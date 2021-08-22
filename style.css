@@ -1,0 +1,314 @@
+*{
+	margin: 0;
+	padding: 0;	
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: url(images/bg.jpg) no-repeat;
+    background-size:cover;
+}
+
+nav{
+    background-color: black;
+    height: 110px;
+    width: 100%;
+}
+
+.logo1{
+    width: 75px;
+    margin: 9px 100px;
+    margin-right: 10px;
+} 
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #FDD451;
+    font-size: 16px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.yelloww{
+    color: #FDD451;
+}
+
+nav ul li a:hover{
+    border: 2px solid #FDD451;
+    color: #FDD451;
+    width: 100%;
+    transition: .6s;
+    text-decoration: none;
+}
+
+.active:hover a{
+    color: black;
+}
+
+.active a{
+    background-color: #FDD451;
+    color: black;
+    width: 100%;
+    transition: .6s;
+    text-decoration: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    color: white;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .logo{
+          width: 60px; 
+          margin: 15px 80px;
+    }
+    nav ul li a{
+        font-size: 12px;
+        
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.8);
+        top: 110px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        overflow-x: auto;
+        z-index: 1;
+    }
+    nav ul li{ 
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.cart{
+    background-color: #FDD451;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.cart:hover{
+    transform: scale(1.2);
+    transition: 0.4s ease-out;
+}
+
+
+#content {
+	text-align: center;
+	padding-top: 10%;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 8em;
+      background: radial-gradient(circle, #F48FB1 0%,  #CE93D8 20%, #B2EBF2 40%, #A5D6A7 60%, #B39DDB 100%);
+     
+      -webkit-background-clip: text;
+      color: transparent;
+      background-size: 400%;
+      animation: gradient 6s linear infinite alternate;
+      font-family: Open Sans;
+      font-weight: 100;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid white;
+    width: 660px;
+    text-align: center;
+    margin: auto;
+}
+
+h3{
+    color: white;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#beard{
+    color: #e1ad01;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+#btn1{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 7px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+#btn1:hover{
+    background-color: #e1ad01;
+    transition: .7s;
+    color: white;
+}
+
+
+.modal-content{
+    background-color: rgba(0,0,0,0.8);
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%,-50%)
+}
+
+.modal-header{
+    background-color: crimson;
+    border: none;
+}
+
+.modal-title{
+    color: white;
+    font-weight: 200px;
+     letter-spacing: 10px;
+}
+
+.modal-body{
+    align-content: center;
+    position: relative;
+    padding-left: 20px;
+}
+.logo2{
+    width: 155px;
+    position:absolute;
+    left:40%;
+    top:55%;
+    margin-top: 20px;/* This needs to be half of the height */
+    margin-left:-25px; /* This needs to be half of the width */
+}
+
+.lab{
+    color: white;
+    margin-top: 20px;
+}
+
+.login-button{
+    background-color: #FDD451;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    float: left;
+}
+
+p #create{
+   color: white;
+   font-size: 12px;
+   float: right;
+line-height: 35px;
+}
+
+p #create:hover{
+    color: #FDD451;
+}
+
+
+.nav-link {
+        display: inline;
+}
+
+
+.dropdown-item{
+	border: 3px solid #FDD451;
+    background: black;
+    color: #FDD451;
+     text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+.dropdown-item:hover{
+   border: 3px solid #FDD451;
+   text-align: center;
+    width: 100%;
+    height: 100%
+
+}
+.dropdown-menu{
+	background-color: rgba(0,0,0,0);
+    border: 0px;
+}
+
+#showpass{
+    color:white;
+}
+
+
+#signup .modal-content{
+    background-color: rgba(0,0,0,0.8);
+    height: 700px;
+    width: 550px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%,-50%)
+}
+
+#signup .form-control{
+    width: 70%;
+    margin-left: 40px;
+}
+
+#signup .form-group #shw{
+    color: white;
+    font-size: 13px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+
+<body>
+	<nav class="fixed-top">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img href="home.html" class="logo1" src="images/beard-logo.png">
+        <ul> 
+            <li><a href="homeLoggedIn.php">Home</a></li>
+           <!--  <li><a href="#">Products</a></li> -->
+            <li>
+             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Grid.php">Beard</a>
+              <a class="dropdown-item" href="hair.php">Hairs</a>
+             </div>
+            </li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a class="yelloww" href="logout.php">LogOut</a></li>
+          
+            <button class="cart"><span>0</span> Cart <i class="fa fa-shopping-cart"></i></button>
+        </ul>
+    </nav>
+    
+    <div class="product-container">
+        <div class="product-header">
+            <h5 class="fsize product-title">Product</h5> 
+            <h5 class="fsize price">Price</h5>
+            <h5 class="fsize quantity">Quantity</h5>
+            <h5 class="fsize total">Total</h5>
+        </div>
+        <div class="pro">
+            
+        </div>
+    </div>
+    <div id="out-div">
+        <button id="out" onclick="window.location.href='orderadd.php';">Checkout</button>
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
